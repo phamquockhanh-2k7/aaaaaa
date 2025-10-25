@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GAI GOI UY TIN.</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+    }
+
+    .background-wrapper {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -2;
+    }
+
+    .background-wrapper img,
+    .background-wrapper video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: relative;
+      z-index: 1;
+    }
+
+    .backdrop {
+      background-color: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(12px);
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen text-center text-white">
+
+  <!-- Ảnh nền fallback -->
+  <div class="background-wrapper">
+    <img src="/public/photo_2025-09-25_21-11-34.jpg" alt="Ảnh nền fallback">
+    <video autoplay loop muted playsinline>
+      <source src="/public/103434-662525884 (1).mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- Nội dung overlay -->
+  <div class="overlay px-4">
+    <div class="backdrop p-6 md:p-10 rounded-3xl shadow-2xl max-w-xl mx-auto">
+      <h1 class="text-3xl md:text-4xl font-bold text-yellow-300 mb-4 leading-snug">GÁI GỌI UY TÍN<br />SỐ 1 VIỆT NAM</h1>
+      <p class="text-lg font-semibold text-yellow-200 mb-2">Tìm bạn tình?</p>
+      <p class="text-white font-semibold text-base mb-4">LIÊN HỆ NGAY!</p>
+
+      <div class="flex flex-col md:flex-row gap-4 justify-center mt-4">
+
+        <a href="https://t.me/+FLoRiJiPtUJhNjhl" target="_blank" class="px-6 py-3 bg-white bg-opacity-30 hover:bg-opacity-50 backdrop-blur-md text-blue-100 rounded-full font-semibold text-lg transition">
+          [NHÓM BOOK GÁI GỌI]<br><small>Ấn vào đây!</small>
+        </a>
+
+
+      </div>
+
+      <p class="mt-6 text-red-500 font-bold text-sm leading-tight">
+        GÁI GỌI SỐ 1 VIỆT NAM<br />UY TIN - CHẤT LƯỢNG - AN TOÀN
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
